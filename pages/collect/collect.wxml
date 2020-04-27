@@ -1,0 +1,18 @@
+<!-- theme -->
+<view class="theme">
+  <view class="themeitem {{item.isactive?'active':''}}" bind:tap="handlethemeitem" data-index="{{index}}" wx:for="{{themelist}}" >{{item.value}}</view>
+</view>
+
+
+<!-- item -->
+<view class="item" wx:for="{{collect}}">
+  <view class="imgwarpper">
+    <image class="cartimg" src="{{item.goods_small_logo}}" mode="widthFix"></image>
+  </view>
+  <view class="goodsinfo">
+    <view class="font">{{item.goods_name}}</view>
+    <text class="pricewarpper">
+      <text class="price">{{item.goods_price}}</text>
+    </text>
+  </view>
+</view>

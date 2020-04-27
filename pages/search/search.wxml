@@ -1,0 +1,12 @@
+<view class="searchwarpper">
+  <input class="inp" placeholder="请输入搜索内容" value="{{value}}" bindinput="input"></input>
+  <view class="cancle" wx:if="{{showcancle}}" bindtap="canclehandel">取消</view>
+</view>
+<!-- list -->
+
+<view class="list">
+  <navigator class="listitem"
+   wx:for="{{searchlist}}"
+   url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}" >{{item.goods_name}}
+   </navigator>
+</view>

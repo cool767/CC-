@@ -1,0 +1,124 @@
+.show_address{
+  padding: 5px 8px;
+  background: rgb(250, 249, 248);
+  color: #ccc;
+  font-size: 30rpx;
+}
+
+
+
+.address_warpper{
+  padding: 7px 40px;
+}
+.add_address{
+  border: 1px solid gray;
+  text-align: center;
+  padding: 3px;
+  border-radius: 8px;
+  font-size: 30rpx;
+}
+
+/* nav */
+.cartnav{
+  text-align: center;
+  color: aliceblue;
+  background: #eb4450;
+  padding: 7px;
+  border-bottom: 2px solid #ccc;
+}
+
+
+/* item */
+.item{
+  display: flex;
+}
+.btnwarpper{
+  flex: 1;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+
+
+
+.imgwarpper{
+  flex: 4;
+}
+.cartimg{
+  width: 100%;
+}
+
+
+
+.goodsinfo{
+  flex: 6;
+}
+.font{
+  height: 40px;
+  line-height: 22px;
+  overflow: hidden;
+  padding: 5px;
+  font-size: 31rpx;
+}
+.pricewarpper{
+  padding-left: 20px;
+  display: inline-block;
+  margin-top: 20px;
+  width: 80px;
+}
+.price{
+  color: red;
+  margin-right: 50%;
+}
+.add,.dec{
+  border: 1px solid gray;
+  padding:  0 3px;
+  background: rgb(247, 243, 243);
+}
+.count{
+  padding:  0 3px;
+}
+
+
+/* <!-- bottom tools --> */
+.tools{
+  display: flex;
+  background: rgb(245, 239, 239);
+  justify-content: center;
+  align-items: center;
+  padding: 0px 2px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.checked{
+  flex: 2;
+  font-size: 30rpx;
+  color: rgb(112, 107, 107);
+  padding-left: 15px;
+}
+
+.middle{
+  flex: 3.5;
+  padding: 0 10px;
+  color: rgb(82, 79, 79);
+  padding-left: 15px;
+  font-size: 33rpx;
+}
+.total{
+  color: red;
+}
+.yunfei{
+  padding-left: 25px;
+  font-size: 30rpx;
+}
+.pay{
+  flex: 2;
+  background: red;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  padding-left: 15px;
+}

@@ -1,0 +1,8 @@
+@import "./style/iconfont";
+page,view,text,swiper,swiperitem,img,navigater{
+  padding: 0;
+  margin: 0;
+}
+page{
+  --themeColor:#eb4450
+}

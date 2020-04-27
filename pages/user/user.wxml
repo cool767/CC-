@@ -1,0 +1,74 @@
+<view>
+    <view class="photo" wx:if="{{!userInfo.nickName}}">
+    <navigator class="login" url="/pages/login/login">登录</navigator>
+  </view>
+  <view class="loginphoto" wx:else>
+    <view class="bigphoto">
+      <image class="" src="{{userInfo.avatarUrl}}" ></image>
+    </view>
+    
+    <view class="smallphoto">
+      <image class="" src="{{userInfo.avatarUrl}}" mode="widthFix" />
+      <view class="name">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+</view>
+  
+<!-- 具体内容 -->
+<view class="content">
+    <view class="collect">
+      <navigator class="item" url="/pages/collect/collect">
+        <view class="cnum">0</view>
+        <view class="cfont">收藏的店铺</view>
+      </navigator>
+      <navigator  class="item" url="/pages/collect/collect">
+        <view class="cnum">0</view>
+        <view class="cfont">收藏的商品</view>
+      </navigator>
+      <navigator class="item" url="/pages/collect/collect">
+        <view class="cnum">0</view>
+        <view class="cfont">关注的商品</view>
+      </navigator>
+      <navigator class="item" url="/pages/collect/collect">
+        <view class="cnum">0</view>
+        <view class="cfont">我的足记</view>
+      </navigator>
+    </view>
+    
+
+
+    <!-- order -->
+    <view class="title">订单详情</view>
+    <view class="order">
+      <view class="orderitem">
+        <view class="oredericon iconfont  icon-dingdan"></view>
+        <view class="orderfont">全部订单</view>
+      </view>
+      <view class="orderitem">
+        <view class="oredericon iconfont  icon-shoukuan"></view>
+        <view class="orderfont">代付款</view>
+      </view>
+      <view class="orderitem">
+        <view class="oredericon iconfont  icon-gouwuche2"></view>
+        <view class="orderfont">未收货</view>
+      </view>
+      <view class="orderitem">
+        <view class="oredericon iconfont  icon-weibiaoti2fuzhi08"></view>
+        <view class="orderfont">退款/退货</view>
+      </view>
+    </view>
+
+
+    <!-- sever  -->
+    <view class="sever">
+      <view class="severitem">收货地址管理</view>
+      <view class="severitem">
+        联系客服<text>1236953242</text>
+      </view>
+      <view class="severitem">意见反馈</view>
+      <view class="severitem">关于我们</view>
+      <view class="severitem recommend">推荐给别人</view>
+
+      
+    </view>
+</view>

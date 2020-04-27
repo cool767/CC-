@@ -1,0 +1,24 @@
+.item{
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+.imgwarpper{
+  flex: 2;
+  padding: 0px 8px;
+}
+.imgwarpper image{
+  width: 100%;
+}
+.info{
+  flex: 3;
+  padding: 12px 10px;
+}
+.title{
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.price{
+  color: red;
+  margin-top: 25px;
+}

@@ -1,0 +1,51 @@
+<!-- 地址栏 -->
+<view>
+  <view class="address_warpper" wx:if="{{!address.userName}}">
+    <view hover-class="#ccc" class="add_address" bind:tap="handleaddress">添加地址</view>
+  </view>
+
+  <view class="show_address" wx:else>
+    <view class="name">收件人:{{address.userName}}</view>
+    <view class="address">买家地址:{{address.provinceName}}{{address.cityName}}{{address.countyName}}{{address.detailInfo}}</view>
+    <view class="tel">联系方式:{{address.telNumber}}</view>
+  </view>
+</view>
+  
+<!-- 购物车nav -->
+<view class="cartnav">购物车</view>
+
+
+<!-- item -->
+<navigator url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}" class="item" wx:for="{{goodslist}}">
+  <checkbox-group class="btnwarpper" >
+    <checkbox class="btn" checked="{{item.checked}}" data-index="{{index}}" bind:tap="handlecheckeditem"></checkbox>
+  </checkbox-group>
+  <view class="imgwarpper">
+    <image class="cartimg" src="{{item.goods_small_logo}}" mode="widthFix"></image>
+  </view>
+  <view class="goodsinfo">
+    <view class="font">{{item.goods_name}}</view>
+    <text class="pricewarpper">
+      <text class="price">{{item.goods_price}}</text>
+    </text>
+    <text class="add" bind:tap="add" data-index="{{index}}">+</text>
+    <text class="count">{{item.count}}</text>
+    <text class="dec" bind:tap="dec"   data-index="{{index}}">-</text>
+  </view>
+</navigator>
+
+
+<!-- bottom tools -->
+<view class="tools">
+  <view class="checked">
+    <checkbox-group bindchange="handleallchecked" >
+      <checkbox class="" checked="{{allchecked}}"></checkbox>全选
+    </checkbox-group>
+  </view>
+  <view class="middle">
+    <view class="total">合计:{{total}}</view>
+    <view class="yunfei">包含运费</view>
+  </view>
+  <view  class="pay" bind:tap="handlepay" >结算({{goodslist.length}})</view>
+    
+</view>

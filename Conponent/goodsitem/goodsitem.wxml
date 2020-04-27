@@ -1,0 +1,9 @@
+<navigator class="item" url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}" wx:for="{{goodslist}}">
+  <view class="imgwarpper">
+    <image class="" src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" mode="widthFix"></image>
+  </view>
+  <view class="info">
+    <view class="title">54565{{item.goods_name}}</view>
+    <view class="price">{{item.goods_price}}</view>
+  </view>
+</navigator>

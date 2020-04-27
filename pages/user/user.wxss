@@ -1,0 +1,110 @@
+page{
+  background: #ccc;
+}
+.photo{
+  height: 45vh;
+  background: rgb(62, 73, 138);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login{
+  width: 50px;
+  padding: 3px 5px;
+  border-radius: 8px;
+  text-align: center;
+  color:#fff ;
+  background: rgb(45, 51, 63);
+}
+
+.loginphoto{
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}.bigphoto{
+  width: 100%;
+  height: 100%;
+}
+.bigphoto image{
+  width: 100%;
+  height: 100%;
+  filter: blur(8px);
+}
+.smallphoto image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.smallphoto{
+  position: absolute;
+  left: 45%;
+}
+.name{
+  margin-left: -15px;
+  margin-top: 10px;
+}
+
+
+
+/* <!-- 具体内容 --> */
+.content{
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 20px;
+}
+.collect{
+  display: flex;
+}
+.item{
+  text-align: center;
+  font-size: 31rpx;
+  flex: 1;
+  padding: 5px;
+  background: #FFF;
+  margin-bottom: 4px;
+}
+.cnum{
+  color:red;
+  padding: 4px;
+}
+
+
+/*     <!-- order -->  */
+.title{
+  padding: 5px 20px;
+  background: #fff;
+  margin-bottom: 2px;
+}
+.order{
+  display: flex;
+}
+.orderitem{
+  flex: 1;
+  text-align: center;
+  font-size: 31rpx;
+  background: #fff;
+  padding: 5px;
+}
+.oredericon{
+  padding: 3px;
+}
+
+.severitem{
+  background: #fff;
+  padding: 5px 10px;
+  font-size: 32rpx;
+  color: rgb(105, 104, 104);
+  margin-top: 3px;
+}
+.severitem text{
+  float: right;
+}
+
+.recommend{
+  margin-top: 30px;
+  line-height: 40px;
+  background: rgb(243, 235, 235);
+}

@@ -1,0 +1,34 @@
+<!-- 地址栏 -->
+<view>
+  
+  <view class="show_address" >
+    <view class="name">收件人:{{address.userName}}</view>
+    <view class="address">
+      买家地址:{{address.provinceName}}{{address.cityName}}{{address.countyName}}{{address.detailInfo}}
+    </view>
+    <view class="tel">联系方式:{{address.telNumber}}</view>
+  </view>
+</view>
+<!-- 购物车nav -->
+<view class="cartnav">购物车</view>
+<!-- item -->
+<view class="item" wx:for="{{goodslist}}">
+  <view class="imgwarpper">
+    <image class="cartimg" src="{{item.goods_small_logo}}" mode="widthFix"></image>
+  </view>
+  <view class="goodsinfo">
+    <view class="font">{{item.goods_name}}</view>
+    <text class="pricewarpper">
+      <text class="price">{{item.goods_price}}</text>
+    </text>
+    <text class="count">数量:{{item.count}}</text>
+  </view>
+</view>
+<!-- bottom tools -->
+<view class="tools">
+  <view class="middle">
+    <view class="total">合计:{{total}}</view>
+    <view class="yunfei">包含运费</view>
+  </view>
+  <view class="pay">支付:({{goodslist.length}})</view>
+</view>

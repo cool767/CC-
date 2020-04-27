@@ -1,0 +1,30 @@
+/* pages/search/search.wxss */
+.searchwarpper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: rgb(226, 216, 216);
+}
+.inp{
+  flex: 9;
+  border-radius: 10px;
+  background: #FFF;
+  padding: 0 8px;
+}
+.cancle{
+  flex: 1;
+  font-size: 31rpx;
+  margin-left: 5px;
+  color: rgb(87, 84, 84);
+}
+/* list */
+.list{
+  width: 95%;
+  margin: 0 auto;
+}
+.listitem{
+  padding: 8px 5px;
+  font-size: 31rpx;
+  border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,4 @@
+<!-- 搜索框 -->
+<SearchInput></SearchInput>
+<!-- item -->
+<goodsitem  goodslist="{{goodslist}}"></goodsitem>

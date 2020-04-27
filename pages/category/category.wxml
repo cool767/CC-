@@ -1,0 +1,29 @@
+<!-- 搜索框 -->
+<SearchInput></SearchInput>
+
+
+<!-- scroll left-->
+<view class="scroll">
+<scroll-view class="scrollleft" scroll-x="false" scroll-y="false">
+  <view  wx:for="{{leftname}}"
+        bind:tap="nameclick" data-index="{{index}}" class="leftitem {{index===curryindex?'active':''}}"  >
+    {{item}}
+  </view>
+</scroll-view>
+
+
+<!-- scroll right -->
+<scroll-view class="scrollright" scroll-x="false" scroll-y="false">
+  <view class="rightitem" wx:for="{{righticon}}"
+        wx:for-index="index1" wx:for-item="item1">
+
+    <view class="title">/{{item1.cat_name}}/</view>
+
+    <navigator  class="iconwarpper" url="/pages/goods_list/goods_list?cid={{item2.cat_id}}" wx:for="{{item1.children}}" wx:for-item="item2">
+      <image class="iconimg" mode="widthFix" src="{{item2.cat_icon}}"></image>
+    </navigator>
+  </view>
+</scroll-view>
+
+
+</view>

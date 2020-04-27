@@ -1,0 +1,37 @@
+<!-- 搜索框 -->
+<SearchInput></SearchInput>
+
+<!-- 轮播图 -->
+<swiper class="" indicator-dots  autoplay circular>
+  <swiper-item  wx:for="{{swiperImg}}">
+    <image class="swiperimg" src="{{item.image_src}}" mode="widthFix" ></image>
+  </swiper-item>
+</swiper>
+
+<!-- 导航 -->
+<view class="navwarpper">
+  <view class="navitem" wx:for="{{navImg}}">
+    <image class="navimg" src="{{item.image_src}}" mode="widthFix"></image>
+  </view>
+</view>
+
+
+  
+<!-- flood -->
+<view class="flood" wx:for="{{flood}}" 
+      wx:for-index="index1"
+      wx:for-item="item1">
+      <!-- item1 title -->
+      <view class="title">
+        <image class="titleImg" src="{{item1.floor_title.image_src}}"></image>
+      </view>
+      <!-- item2 -->
+      <view class="itemwarpper">
+        <view class="flooditem" wx:for="{{item1.product_list}}" wx:for-index="index2" wx:for-item="item2">
+          <navigator class="imgitemwarpper" url="{{item2.navigator_url}}" open-type="navigate"> 
+            <image class="imgitem" src="{{item2.image_src}}"></image>
+          </navigator>
+        </view>
+      </view>
+    
+</view>

@@ -1,0 +1,62 @@
+.theme{
+  display: flex;
+  font-size: 30rpx;
+  color: rgb(128, 125, 125);
+  border-bottom: 1px solid #ccc;
+}
+.themeitem{
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+}
+.active{
+  border-bottom: 2px solid red;
+}
+
+
+
+
+/* item */
+.item{
+  display: flex;
+  border-bottom: 3px solid #ccc;
+}
+.btnwarpper{
+  flex: 1;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+
+
+
+.imgwarpper{
+  flex: 4;
+}
+.cartimg{
+  width: 100%;
+}
+
+
+
+.goodsinfo{
+  flex: 6;
+  padding: 10px;
+}
+.font{
+  height: 40px;
+  line-height: 22px;
+  overflow: hidden;
+  padding: 5px;
+  font-size: 31rpx;
+}
+.pricewarpper{
+  padding-left: 20px;
+  display: inline-block;
+  margin-top: 20px;
+  width: 80px;
+}
+.price{
+  color: red;
+  margin-right: 50%;
+}
